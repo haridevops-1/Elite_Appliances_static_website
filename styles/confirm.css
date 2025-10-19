@@ -1,0 +1,76 @@
+/* ===== Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(7, 87, 91, 0.75);
+  color: #1a1a1a;
+}
+
+/* ===== Confirmation Box ===== */
+.confirm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.confirm-box {
+  background-color: #fff;
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+}
+
+.confirm-box h2 {
+  color: #880e4f;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.confirm-box p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.confirm-box button {
+  background-color: rgba(7, 87, 91, 0.75);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.confirm-box button:hover {
+  background-color: #ad1457;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .confirm-box {
+    padding: 30px 20px;
+  }
+
+  .confirm-box h2 {
+    font-size: 24px;
+  }
+
+  .confirm-box p {
+    font-size: 16px;
+  }
+}

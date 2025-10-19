@@ -1,0 +1,177 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #1a1a1a;
+}
+
+/* ===== Navbar ===== */
+.header {
+  /* background-color: #002d40; */
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+   background-color: #07575b;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd54f;
+}
+
+/* ===== Top Link ===== */
+.top-link {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.top-link a {
+  text-decoration: none;
+  background-color: #07575b;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.top-link a:hover {
+  background-color: #004d40;
+}
+
+/* ===== Products Grid ===== */
+.entertainment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.product {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 340px;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product h2 {
+  font-size: 18px;
+  color: #003b46;
+  margin: 15px 10px 10px 10px;
+}
+
+.product p {
+  font-size: 14px;
+  margin: 5px 15px;
+  color: #444;
+}
+
+.price {
+  font-weight: bold;
+  color: #00796b;
+  margin: 10px 0;
+}
+
+/* ===== Buttons ===== */
+.product button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin: 15px 0 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #00796b;
+}
+
+/* ===== Bottom Link ===== */
+.bottom-link {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.bottom-link button {
+  background-color: #006064;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.bottom-link button:hover {
+  background-color: #004d40;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #002d40;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+footer a {
+  color: #ffd54f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
