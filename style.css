@@ -1,74 +1,107 @@
+/* Reset default margins/padding */
 * {
-  margin: 0%;
-  padding: 0%;
-}
-nav h1 {
-  font-family: "poppins";
-  font-size: 25px;
-}
-nav {
-  background-color: #003b46;
-  color: #fff;
-  padding: 20px;
-}
-.section {
-  object-fit: cover;
-}
-h1,
-ul,
-li {
-  display: inline;
-}
-ul,
-li {
-  font-size: 20px;
-}
-ul {
-  margin-left: 66%;
-}
-.header ul a {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-li a:hover {
-  font-size: larger;
-  color: #fff;
-}
-.box {
-  border: 5px solid #000;
-  display: inline-block;
-  width: 250px;
-  margin-left: 90px;
-  text-align: center;
-}
-.box a {
-  text-decoration: none;
-  color: #000;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-footer {
-  background-color: #003b46;
-  color: #fff;
-  text-align: center;
-  font-size: 25px;
-  padding: 30px;
-  margin-top: 40px;
-  font-family: "poppins";
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
-footer a {
+
+/* Header section */
+.header {
+  background-color: #1a1a1a;
   color: white;
+  padding: 15px 0;
 }
-.poster {
-  margin-top: 30px;
+
+.header h1 {
+  text-align: center;
+  font-size: 2rem;
 }
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Poster section */
+.poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid #ffcc00;
+}
+
+/* Products section */
 .products {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 0;
+  background-color: #fff;
 }
-h1 {
-  font-size: 25px;
+
+.box {
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.home-appliances .image {
-  display: inline-block;
+
+.box img {
+  border-radius: 10px;
+}
+
+.box a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer section */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
